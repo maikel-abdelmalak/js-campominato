@@ -31,6 +31,7 @@ var errore = false;
 
 var punteggio = 0;
 
+//con un ciclo while chiedo un numero nuovo numero all'utente fino a che l'utente non scelga uno dei numeri estratti dal pc
 while (errore == false){
     var numero_utente = inserimento_numero(minimo, massimo);
     for (var i = 0; i < max_numeri_pc && errore == false; i++){
@@ -38,6 +39,7 @@ while (errore == false){
             errore = true;
         }
     }
+
     if(errore == false){
         punteggio++;
     }else{
@@ -46,10 +48,6 @@ while (errore == false){
     }
 
 }
-
-
-
-
 
 
 //FUNZIONI
