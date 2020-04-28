@@ -23,10 +23,10 @@ var numeri_pc = [];
 
 for(var i = 0; i < max_numeri_pc; i++){
     do{
-    var random = numero_random(minimo, massimo);
-}while(numeri_pc.includes(random))
+        var random = numero_random(minimo, massimo);
+    }while(numeri_pc.includes(random))
 
-numeri_pc[i] = random;
+    numeri_pc[i] = random;
 }
 
 console.log(numeri_pc);
